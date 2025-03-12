@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms in HTML</title>
+    </head>
+    <body>
+        <!-- Simple forms-->
+        <h1>LOGIN PAGE</h1>
+        <hr>
+        <h2>Enter your credentials</h2> <br/>
+        <form action="LoginPage.html">
+            <input type="text" placeholder="Type username"> 
+            <br/>
+            <br/>
+            <input type="password" placeholder="Type Password">
+        </form>
+        <br/>
+        <hr>
+
+        <!--Forms with labels-->
+        <h1>Registration Form</h1>
+        <br/>
+        <h2>Fill in your details</h2> <br/>
+        <form action="RegistrationForm.html">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Type your full name">
+            <br/>
+            <br/>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Type your email">
+            <br/>
+            <br/>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Type your password">
+            <br/>
+            <br/>
+            <input type="submit" value="Submit">
+            <br/>
+            <hr>
+
+        <h1>Registration Form</h1><br>
+        <!--Radio(only 1 option) buttons in HTML forms... here used for branches-->
+        <h2>Click on buttons only</h2> <br/>
+        <input type="radio" value="Fucks Electronic devices" name="class">ECE      <!--Value part is given to backend..like it indicates the info for that option-->
+        <input type="radio" value="Fucks DSA" name="class">CSE
+        <input type="radio" value="Fucks DSA too" name="class">ISE
+        <input type="radio" value="Fucks Electric devices" name="class">EEE
+        <input type="radio" value="Fucks Mechanical devices" name="class">MECH
+        <br/>
+        <hr>
+
+        <h1>Registration Form</h1><br>
+        <!--Radio buttons along with id labels seperated each line-->  
+        <h2>Can click on Text for selection</h2> <br/>        <!--Here clicking on text(word ECE) will activate the option-->
+        <label for="ece">
+        <input type="radio" id="ece" value="Fucks Electronic devices" name="class">ECE</label> <br/>
+        <label for="cse">
+        <input type="radio" id="cse" value="Fucks DSA" name="class">CSE</label> <br/>
+        <label for="ise">
+        <input type="radio" id="ise" value="Fucks DSA too" name="class">ISE</label><br/>
+        <label for="eee">
+        <input type="radio" id="eee" value="Fucks Electric devices" name="class">EEE</label><br/>
+        <label for="mech">
+        <input type="radio" id="mech" value="Fucks Mechanical devices" name="class">MECH</label><br/>
+        <br/>
+        <hr>
+
+        <!--Checkboxes(can select multiple options) in HTML forms without ID-->
+        <h1>Registration Form</h1><br>
+        <h2>Click on buttons only</h2> <br/>
+        <input type="checkbox" value="Wishes to do Webdev" name="class">Web Development
+        <br/>
+        <input type="checkbox" value="Wishes to do Appdev" name="class">App Development
+        <br/>
+        <input type="checkbox" value="Wishes to do AI and ML" name="class">AI & ML
+        <br/>
+        <input type="checkbox" value="Wishes to do Cybersecurity" name="class">Cybersecurity
+        <br/>
+        <input type="checkbox" value="Wishes to do IoT" name="class">IoT
+        <hr>
+
+        <!--Checkboxes(can select multiple options) in HTML forms with ID-->
+        <h1>Registration Form</h1><br>
+        <h2>Can click on Text for selection</h2> <br/>
+        <label for="webdev">
+        <input type="checkbox" id="webdev" value="Wishes to do Webdev" name="class"> Web Development</label>
+        <br/>      
+        <label for="appdev">
+        <input type="checkbox" id="appdev" value="Wishes to do Appdev" name="class">App Development</label>
+        <br/>
+        <label for="aiandml">
+        <input type="checkbox" id="aiandml" value="Wishes to do AI and ML" name="class">AI & ML</label>
+        <br/>
+        <label for="cybersecurity">
+        <input type="checkbox" id="cybersecurity" value="Wishes to do Cybersecurity" name="class">Cybersecurity</label>
+        <br/>
+        <label for="iot">
+        <input type="checkbox" id="iot" value="Wishes to do IoT" name="class">IoT</label>
+        <br/>
+        <hr>
+
+        <!--Select in HTML forms-->
+        <h1>Registration Form</h1><br>
+        <h2>Choose your course</h2> <br/>
+        <select course="course">
+            <option value="Web Development">Web Development</option>
+            <option value="App Development">App Development</option>
+            <option value="AI & ML">AI & ML</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="IoT">IoT</option>
+        </select>
+        <br/>
+        <hr>
+        
+        <h1>Feedback section :</h1>
+        <h2>Type your feedback here</h2> <br/>
+        <textarea name="feedback" id="feedback" placeholder="Type your feedback here"></textarea> <br>
+    </form>
+    </body>
+</html>
